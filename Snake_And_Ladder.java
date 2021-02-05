@@ -11,6 +11,7 @@ public class Snake_And_Ladder {
 		// declaraton
 		int position = 0;
 		int no_of_die = 0;
+		int no_of_Dice = 0;
 		// winnig position till 100
 		while (position != Win_position) {
 			// checkin Dice
@@ -34,9 +35,11 @@ public class Snake_And_Ladder {
 			if (position < no_play) {
 				position = no_play;
 			} else if (position > Win_position) {
+				no_of_Dice++;
 				position = position - no_of_die;
 			}
 		}
 		System.out.println("Player Winning Position is :" + position);
+		System.out.println("Number Of Times Dice Win The Game :" + no_of_Dice);
 	}
 }
