@@ -1,6 +1,6 @@
 package com.Snake_Ladder;
 
-public class Snake_And_Ladder {
+public class SnakeAndLadder {
 
 	public static void main(String[] args) {
 		
